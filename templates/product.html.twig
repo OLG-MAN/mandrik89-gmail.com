@@ -1,212 +1,156 @@
-<!DOCTYPE html>
+{% extends "base.html.twig" %}
 
-<html lang="en">
+{% block body %}
+    <body>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Online Shop</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    <!-- Google Fonts Roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/css/mdb.min.css" rel="stylesheet">
-    <!-- custom styles -->
-    <style>
-        html,
-        body,
-        .view {
-            height: 100%;
-        }
-
-        .carousel {
-            height: 80%;
-        }
-
-        .carousel .carousel-inner {
-            height: 100%;
-        }
-
-        .carousel .carousel-inner .carousel-item,
-        .carousel .carousel-inner .active {
-            height: 100%;
-        }
-
-        @media (max-width: 776px) {
-            .carousel {
-                height: 100%;
-            }
-        }
-
-        .page-footer {
-            background: #929fba;
-        }
-    </style>
-</head>
-
-<body>
-
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
-        <div class="container">
-            <a href="/" class="navbar-brand waves-effect">
-                <strong class="blue-text">AMAZING SHOP</strong>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link waves-effect">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link waves-effect">Product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link waves-effect">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link waves-effect">Blog</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav nav-flex icons">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link waves-effect">
-                            <span class="badge red z-depth-1 mr1">8</span>
-                            <i class="fa fa-shopping-cart"></i>
-                            <span class="clearfix d-none d-sm-inline-block">Cart</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link waves-effect">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link waves-effect">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link border border-light rounded waves-effect">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <main class="mt-5 pt-4">
-        <div class="container dark-grey-text mt-5">
-            <div class="row animated fadeIn">
-                <div class="col-md-6 mb-4">
-                    <img src="https://hotline.ua/img/tx/158/1582399075.jpg" alt="macbook" class="img-fluid">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+            <div class="container">
+                <a href="/" class="navbar-brand waves-effect">
+                    <strong class="blue-text">AMAZING SHOP</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link waves-effect">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link waves-effect">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link waves-effect">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link waves-effect">Blog</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav nav-flex icons">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link waves-effect">
+                                
+                                <i class="fa fa-shopping-cart"></i>
+                                <span class="clearfix d-none d-sm-inline-block">Cart</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link waves-effect">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link waves-effect">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link border border-light rounded waves-effect">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <div class="pt-4">
-                        <div class="mb-3">
-                            <a href="">
-                                <span class="badge purple mr-1">Category 2</span>
-                            </a>
-                            <a href="">
-                                <span class="badge blue mr-1">New</span>
-                            </a>
-                            <a href="">
-                                <span class="badge red mr-1">Bestseller</span>
-                            </a>
+            </div>
+        </nav>
+
+        <main class="mt-5 pt-4">
+            <div class="container dark-grey-text mt-5">
+                <div class="row animated fadeIn">
+                    <div class="col-md-6 mb-4">
+                        <img src="https://hotline.ua/img/tx/158/1582399075.jpg" alt="macbook" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="pt-4">
+                            <div class="mb-3">
+                                <a href="">
+                                    <span class="badge purple mr-1">Category 2</span>
+                                </a>
+                                <a href="">
+                                    <span class="badge blue mr-1">New</span>
+                                </a>
+                                <a href="">
+                                    <span class="badge red mr-1">Bestseller</span>
+                                </a>
+                            </div>
+                            <p class="lead">
+                                <span class="mr-1">
+                                    <del>2500UAH</del>
+                                </span>
+                                <span class="mr-1">
+                                    1990UAH
+                                </span>
+                            </p>
+                            <p class="lead font-weight-bold">Description</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis non at pariatur qui, fuga cumque debitis est quasi molestiae dolorem quam ea ad autem suscipit ab? ipsum amet, provident mollitia Officiis, quidem.
+                            </p>
+                            <form action="" class="d-flex justify-content-left">
+                                <input type="number" value="1" aria-label="Search" style="width: 100px" class="form-control">
+                                <button type="submit" class="btn btn-primary btn-md my-0 p">
+                                    Add to cart <i class="fa fa-shopping-cart ml-1"></i>
+                                </button>
+                            </form>
                         </div>
-                        <p class="lead">
-                            <span class="mr-1">
-                                <del>2500UAH</del>
-                            </span>
-                            <span class="mr-1">
-                                1990UAH
-                            </span>
-                        </p>
-                        <p class="lead font-weight-bold">Description</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis non at pariatur qui, fuga cumque debitis est quasi molestiae dolorem quam ea ad autem suscipit ab? ipsum amet, provident mollitia Officiis, quidem.
-                        </p>
-                        <form action="" class="d-flex justify-content-left">
-                            <input type="number" value="1" aria-label="Search" style="width: 100px" class="form-control">
-                            <button type="submit" class="btn btn-primary btn-md my-0 p">
-                                Add to cart <i class="fa fa-shopping-cart ml-1"></i>
-                            </button>
-                        </form>
+                    </div>
+                </div>
+                <hr>
+                <div class="row d-flex justify-content-center animated fadeIn">
+                    <div class="col-md-6 text-center">
+                        <h4 class=" my-4 h4">Addition information</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas numquam possimus harum necessitatibus incidunt dolorum?</p>
+
+                    </div>
+                </div>
+                <div class="row animated fadeIn">
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <img src="https://pics.mobilluck.com.ua/photo/noutbuk/apple/Apple_A1466_MacBook_Air_13W_Dual-core_i5__MQD32UA_A__1412294_2632242.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <img src="https://i2.rozetka.ua/goods/14662589/112018712_images_14662589290.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <img src="https://images.ua.prom.st/1085955148_noutbuk-apple-macbook.jpg" alt="" class="img-fluid wow">
                     </div>
                 </div>
             </div>
-            <hr>
-            <div class="row d-flex justify-content-center animated fadeIn">
-                <div class="col-md-6 text-center">
-                    <h4 class=" my-4 h4">Addition information</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas numquam possimus harum necessitatibus incidunt dolorum?</p>
+        </main>
 
-                </div>
+        <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+            <div class="pt-4">
+                <a href="#" role="button" class="btn btn-outline-white">AMAZING Shop 
+                    <i class="fa fa-graduatio-cap ml-2"></i>
+                </a>
+                <a href="#" role="button" class="btn btn-outline-white">AMAZING company 
+                    <i class="fa fa-graduatio-cap ml-2"></i>
+                </a>
             </div>
-            <div class="row animated fadeIn">
-                <div class="col-lg-4 col-md-12 mb-4">
-                    <img src="https://pics.mobilluck.com.ua/photo/noutbuk/apple/Apple_A1466_MacBook_Air_13W_Dual-core_i5__MQD32UA_A__1412294_2632242.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-lg-4 col-md-12 mb-4">
-                    <img src="https://i2.rozetka.ua/goods/14662589/112018712_images_14662589290.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-lg-4 col-md-12 mb-4">
-                    <img src="https://images.ua.prom.st/1085955148_noutbuk-apple-macbook.jpg" alt="" class="img-fluid wow">
-                </div>
+            <hr class="my-4">
+            <div class="pb-4">
+                <a href="">
+                    <i class="fab fa-facebook mr-3"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-vk mr-3"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-google mr-3"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-twitter mr-3"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-github mr-3"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-pinterest mr-3"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-reddit mr-3"></i>
+                </a>
             </div>
-        </div>
-    </main>
+            <div class="footer-copyright py-2">Amazing Company</div>
+        </footer>
+    </body>
+</html> 
 
-    <footer class="page-footer text-center font-small mt-4 wow fadeIn">
-        <div class="pt-4">
-            <a href="#" role="button" class="btn btn-outline-white">AMAZING Shop 
-                <i class="fa fa-graduatio-cap ml-2"></i>
-            </a>
-            <a href="#" role="button" class="btn btn-outline-white">AMAZING company 
-                <i class="fa fa-graduatio-cap ml-2"></i>
-            </a>
-        </div>
-        <hr class="my-4">
-        <div class="pb-4">
-            <a href="">
-                <i class="fab fa-facebook mr-3"></i>
-            </a>
-            <a href="">
-                <i class="fab fa-vk mr-3"></i>
-            </a>
-            <a href="">
-                <i class="fab fa-google mr-3"></i>
-            </a>
-            <a href="">
-                <i class="fab fa-twitter mr-3"></i>
-            </a>
-            <a href="">
-                <i class="fab fa-github mr-3"></i>
-            </a>
-            <a href="">
-                <i class="fab fa-pinterest mr-3"></i>
-            </a>
-            <a href="">
-                <i class="fab fa-reddit mr-3"></i>
-            </a>
-        </div>
-        <div class="footer-copyright py-2">Amazing Company</div>
-    </footer>
-
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js"></script>
-    <script type="text/javascript"></script>
-</body>
-
-</html>
+{% endblock %}
