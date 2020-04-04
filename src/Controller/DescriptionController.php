@@ -5,13 +5,13 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 
-class ProductController extends AbstractController
+class DescriptionController extends AbstractController
 {
     /**
-     * @Route("/product/")
+     * @Route("/description")
      */
-    public function product()
+    public function description()
     {
-        return $this->render('product.html.twig');
+        return $this->render('description.html.twig');
     }
 }
